@@ -1,0 +1,347 @@
+# Instincts generated from https://github.com/shaneslo/agents
+# Generated: 2026-04-16T06:28:05.543Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: agents-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/shaneslo/agents
+---
+
+# Agents Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: feat, fix
+
+## Evidence
+
+- 2 commits analyzed
+- Detected conventional commit pattern
+- Examples: feat: add Credit Governance Kit V1 conductor spec, fix: address CodeRabbit nitpicks on cgk-v1 spec and plan
+
+---
+id: agents-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/shaneslo/agents
+---
+
+# Agents Commit Length
+
+## Action
+
+Write moderate-length commit messages (~53 characters)
+
+## Evidence
+
+- Average commit message length: 53 chars
+- Based on 2 commits
+
+---
+id: agents-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/shaneslo/agents
+---
+
+# Agents Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: agents-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/shaneslo/agents
+---
+
+# Agents Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: agents-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/shaneslo/agents
+---
+
+# Agents Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: agents-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/shaneslo/agents
+---
+
+# Agents Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: agents-workflow-conductor-spec-and-plan-update
+trigger: "when doing conductor spec and plan update"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/shaneslo/agents
+---
+
+# Agents Workflow Conductor Spec And Plan Update
+
+## Action
+
+Follow the conductor-spec-and-plan-update workflow:
+1. Edit or add .conductor/tracks/<track-name>/spec.md to define or update functional requirements, acceptance criteria, and risk register.
+2. Edit or add .conductor/tracks/<track-name>/plan.md to outline or revise the implementation phases, tasks, and checkpoints.
+3. Optionally, edit .conductor/product.md to update the overall product vision or scope.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: .conductor/tracks/*/spec.md, .conductor/tracks/*/plan.md, .conductor/product.md
+
+---
+id: agents-instinct-camelcase-files
+trigger: "When creating or renaming a file in the codebase"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: shaneslo/agents
+---
+
+# Agents Instinct Camelcase Files
+
+## Action
+
+Use camelCase for file names
+
+## Evidence
+
+- Pattern in namingConventions.files
+- No snake_case or kebab-case files detected
+
+---
+id: agents-instinct-camelcase-functions
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: shaneslo/agents
+---
+
+# Agents Instinct Camelcase Functions
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+- Consistent with TypeScript style
+
+---
+id: agents-instinct-pascalcase-classes
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: shaneslo/agents
+---
+
+# Agents Instinct Pascalcase Classes
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: agents-instinct-screaming-constants
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: shaneslo/agents
+---
+
+# Agents Instinct Screaming Constants
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: agents-instinct-relative-imports
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: shaneslo/agents
+---
+
+# Agents Instinct Relative Imports
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+- No absolute imports detected
+
+---
+id: agents-instinct-named-exports
+trigger: "When exporting functions, classes, or constants"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: shaneslo/agents
+---
+
+# Agents Instinct Named Exports
+
+## Action
+
+Use named exports instead of default exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: agents-instinct-separate-tests
+trigger: "When adding or updating tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: shaneslo/agents
+---
+
+# Agents Instinct Separate Tests
+
+## Action
+
+Place tests in a separate directory from source code
+
+## Evidence
+
+- Pattern in architecture.testLocation: 'separate'
+
+---
+id: agents-instinct-conventional-commits
+trigger: "When committing code changes"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: shaneslo/agents
+---
+
+# Agents Instinct Conventional Commits
+
+## Action
+
+Use the Conventional Commits format with 'feat' or 'fix' prefixes and a concise summary
+
+## Evidence
+
+- Seen in commit: 'feat: add Credit Governance Kit V1 conductor spec'
+- Seen in commit: 'fix: address CodeRabbit nitpicks on cgk-v1 spec and plan'
+- Pattern in commits.prefixes
+
+---
+id: agents-instinct-commit-length
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: shaneslo/agents
+---
+
+# Agents Instinct Commit Length
+
+## Action
+
+Keep the commit summary around 50 characters
+
+## Evidence
+
+- Pattern in commits.averageLength: 53
+
+---
+id: agents-instinct-conductor-spec-plan-update
+trigger: "When introducing or revising a Conductor product/track specification and its implementation plan"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: shaneslo/agents
+---
+
+# Agents Instinct Conductor Spec Plan Update
+
+## Action
+
+Edit or add .conductor/tracks/<track-name>/spec.md and plan.md, and optionally update .conductor/product.md
+
+## Evidence
+
+- Workflow: conductor-spec-and-plan-update
+- Pattern in files: .conductor/tracks/*/spec.md, .conductor/tracks/*/plan.md, .conductor/product.md
+
