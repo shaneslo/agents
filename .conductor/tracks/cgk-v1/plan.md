@@ -51,7 +51,7 @@
 
 ### Checkpoint
 
-```
+```text
 Commit: [cgk-v1] checkpoint: phase 1 complete — foundation and research done
 ```
 
@@ -95,7 +95,7 @@ Commit: [cgk-v1] checkpoint: phase 1 complete — foundation and research done
 
 ### Checkpoint
 
-```
+```text
 Commit: [cgk-v1] checkpoint: phase 2 complete — calculator and skill library done
 ```
 
@@ -136,7 +136,7 @@ Commit: [cgk-v1] checkpoint: phase 2 complete — calculator and skill library d
 
 ### Checkpoint
 
-```
+```text
 Commit: [cgk-v1] checkpoint: phase 3 complete — governance templates and alerting done
 ```
 
@@ -180,7 +180,7 @@ Commit: [cgk-v1] checkpoint: phase 3 complete — governance templates and alert
 
 ### Checkpoint
 
-```
+```text
 Commit: [cgk-v1] checkpoint: phase 4 complete — kit ships-ready
 ```
 

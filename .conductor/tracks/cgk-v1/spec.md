@@ -35,7 +35,7 @@ A formula-based Notion page or database that estimates per-run credit cost from 
 
 **Acceptance Criteria:**
 
-- [ ] Covers all three model tiers available in Notion Custom Agents (e.g., GPT-5.4 Mini/Nano, standard, premium — mapped to documented Notion credit rates)
+- [ ] Covers all three model tiers available in Notion Custom Agents (e.g., economy/standard/premium tiers — exact names and rates TBD in Phase 1 research)
 - [ ] Page scope options (small: <5 pages, medium: 5–20 pages, large: >20 pages) produce distinct multipliers
 - [ ] Step count input (1–10 steps) scales estimate linearly
 - [ ] Output shows estimated credits per run AND projected monthly cost at N runs/day
